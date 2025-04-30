@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "author": "Gislany Dias Formiga",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-esp32-s3-devkitc-1",
+      "id": "esp",
+      "top": -28.98,
+      "left": -33.83,
+      "attrs": { "builder": "esp-idf" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": 15.6,
+      "left": -178.6,
+      "attrs": { "color": "blue" }
+    },
+    { "type": "wokwi-led", "id": "led2", "top": 73.2, "left": -169, "attrs": { "color": "red" } },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": 109.55,
+      "left": -105.6,
+      "attrs": { "value": "220" }
+    },
+    { "type": "wokwi-vcc", "id": "vcc1", "top": -47.24, "left": -124.8, "attrs": {} },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 52.25,
+      "left": -126.2,
+      "attrs": { "value": "220" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "r2:2", "esp:3", "green", [ "v0", "h8.4" ] ],
+    [ "r2:1", "led2:A", "green", [ "v0" ] ],
+    [ "vcc1:VCC", "esp:3V3.1", "red", [ "v0" ] ],
+    [ "led2:C", "esp:GND.1", "green", [ "v0" ] ],
+    [ "led1:C", "esp:GND.1", "green", [ "v0" ] ],
+    [ "led1:A", "r1:1", "green", [ "v0" ] ],
+    [ "r1:2", "esp:7", "green", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
