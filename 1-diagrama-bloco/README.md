@@ -1,4 +1,4 @@
-# Diagram de Blocos
+# Diagrama de Blocos
 
 ## Objetivo
 Projetar e representar, por meio de um diagrama em blocos, a estrutura de hardware de um sistema embarcado destinado ao monitoramento de temperatura ambiente, com funcionalidades de alarme e exibição de dados em display.
