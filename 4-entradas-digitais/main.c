@@ -4,7 +4,7 @@
 #include "driver/gpio.h"
 #include "esp_timer.h"
 
-#define btn1 GPIO_NUM_5
+#define btn1 GPIO_NUM_4
 #define btn2 GPIO_NUM_1
 
 #define LED0 GPIO_NUM_9
