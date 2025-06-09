@@ -44,5 +44,8 @@ O contador deve ser circular (isto é, ao ultrapassar o valor máximo de 4 bits,
 O contador é de 4 bits, portanto seu valor varia entre 0x0 (0 decimal ou b0000) e 0xF (15 decimal ou b1111).
 A unidade de incremento inicial é 1 unidade.
 O valor final do contador deve sempre estar dentro do intervalo de 4 bits (0x0 a 0xF) após cada incremento.
-O debounce deve ser tratado por software (Não usar delay).
+
+##### Obs:
+
+O debounce deve ser tratado por software (Não usar daley).
 É obrigatório o uso de interrupções para a leitura do estado dos botões.
