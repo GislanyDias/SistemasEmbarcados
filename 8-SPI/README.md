@@ -1,8 +1,8 @@
-# Leitura do sensor de temperatura analógico
+# QAD com SDCard
 
 
 ## Objetivo:
-Implementar um sistema de aquisição de dados analógicos utilizando o conversor ADC do ESP32-S3, no ambiente de simulação Wokwi. Os conceitos abordados incluem: Mapeamento de pinos analógicos, Configuração de parâmetros (faixas de tensão, resolução, atenuação, taxa de amostragem) e calibração do ADC.
+A partir do projeto da Atividade 7, implemente o uso do SDCard. Os conceitos abordados incluem: utilização da interface de comunicação SPI.
 
 ## Material Necessário:
 - ESP32S3
@@ -20,7 +20,7 @@ Implementar um sistema de aquisição de dados analógicos utilizando o converso
 ###  2. Esquemático atualizado com os novos componentes.
 
 ###  3.  Desenvolvimento do Código.
-Desenvolva um programa utilizando o ESP-IDF para implementar um DAQ para ler a temperatura por meio do NTC e gerar um alerta sonoro ao ultrapassar a temperatura de alarme (Default 25 °C).
+Desenvolva um programa utilizando o ESP-IDF para salvar a leitura da temperatura adquirida por meio do NTC em um SDCard.
 
 #### Parte A - Funcionalidade dos botões:
 
