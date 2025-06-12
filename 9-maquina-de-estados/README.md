@@ -2,7 +2,7 @@
 
 
 ## Objetivo:
-A partir do projeto da Atividade 7, implemente o uso do SDCard. Os conceitos abordados incluem: utilização da interface de comunicação SPI.
+A partir da estrutura do Projeto da Atividade 8, implemente uma Máquina de Estados para organizar a estrutura do programa.
 
 ## Material Necessário:
 - ESP32S3
